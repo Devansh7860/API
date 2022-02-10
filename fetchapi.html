@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Varela&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9f5966c5ff.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fetchapi.css">
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="converter main-child">
+            <h2>Currency Converter</h2>
+
+            <div class="boss">
+
+                <div class="countrySelector">
+                    <select  name="" id="fromCountry">
+                    </select>
+
+                    <input type="number" name="" id="fromAmount">
+
+                </div>
+
+                <div class="arrow">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+
+                <div class="amount">
+                    <select name="" id="toCountry">
+                    </select>
+
+                    <input type="number" name="" id="toAmount" readonly>
+                </div>
+            </div>
+
+            <div class="convert">
+                <button id="convertBtn">Convert</button>
+            </div>
+        </div>
+
+
+        <div class="jokes main-child">
+            <h2>Memes Generator</h2>  
+
+            <div class="memeArea">
+                <img src="" alt="">
+            </div>
+            <div class="getJoke">
+                <button id="getJokeBtn">Get a joke :)</button>
+            </div>
+        </div>
+
+
+        <div class="corona-cases main-child">
+            <h2>Corona Tracker </h2>
+            <div class="selectCity">
+                <input type="text" name="city" class="cityInput" placeholder="Enter the state ">
+                <button class="cityBtn" ><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="caseArea">
+                <div class="confirmed caseArea-child">
+                    <h3>Confirmed</h3>
+                    <h4></h4>
+                    <h5></h5>
+                </div>
+                <div class="recovered caseArea-child">
+                    <h3>Recovered</h3>
+                    <h4></h4>
+                    <h5></h5>
+                </div>
+                <div class="death caseArea-child">
+                    <h3>Deaths</h3>
+                    <h4></h4>
+                    <h5></h5>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+        <div class="weather main-child">
+            <h2>Weather Updates</h2>
+
+            <div class="selectCity">
+                <input type="text" name="city" class="cityInput" placeholder="Enter the city">
+                <button class="cityBtn"><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="weather-cart">
+                <div class="weather-cart-main">
+                    <div class="weather-cart-inner1">
+                        <h3></h3>
+                        <h5></h5>
+
+                        <div class="weather-cart-temp">
+                            <h1 style="font-family: 'varela'; width: 45%; margin-right: 3px; visibility: hidden; border: 1px solid white; background-color: rgba(65, 152, 192, 0.87); padding: 5px; border-radius: 6px; font-size: 2.5em; color: rgb(230, 231, 233);">
+                            </h1>
+                            <div class="weather-cart-temp-inner">
+                                <h4 id="wind">Wind : </h4>
+                                <hr noshade>
+                                <h4 id="humidity">Humdity : </h4>
+                                <hr noshade>
+                                <h4 id="pressure">Pressure : </h4>
+                                <hr noshade>
+                                <h4 id="visibility">Visibility : </h4>
+                                <hr noshade>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weather-cart-inner2">
+                        <i style="font-size: 4.4em; height: 100%; display: flex; align-items: center; justify-content: center; color: rgb(220, 250, 246); text-align: center;" class="fas fa-cloud-showers-heavy"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="fetchapi.js"></script>
+</body>
+
+</html>
