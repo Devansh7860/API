@@ -1,9 +1,10 @@
-// 'https://v6.exchangerate-api.com/v6/8a4600afb25e3e02ed974cc2/latest/{country}')
-//'https://api.chucknorris.io/jokes/random'
-//'https://v6.exchangerate-api.com/v6/8a4600afb25e3e02ed974cc2/latest/{country}'
-// 'http://api.openweathermap.org/data/2.5/weather?q={city,country}&appid=d25a489495cc3f36f3029592a123031a'
-// https://data.covid19india.org/data.json
-// https://www.mohfw.gov.in/data/datanew.json  // OFFICIAL GOVERNMENT DATA !
+// LINKS: 
+/* 'https://v6.exchangerate-api.com/v6/8a4600afb25e3e02ed974cc2/latest/{country}')
+'https://api.chucknorris.io/jokes/random'
+'https://v6.exchangerate-api.com/v6/8a4600afb25e3e02ed974cc2/latest/{country}'
+'http://api.openweathermap.org/data/2.5/weather?q={city,country}&appid=d25a489495cc3f36f3029592a123031a'
+'https://data.covid19india.org/data.json'
+'https://www.mohfw.gov.in/data/datanew.json'  // OFFICIAL GOVERNMENT DATA ! */
 
 
 // ---------------------------- CURRENCY CONVERTER -----------------------------
@@ -103,7 +104,7 @@ let cityInput2 = document.getElementsByClassName('cityInput')[1]
 let getWeatherUpdate = async() => {
 
     let city2 = cityInput2.value;
-    let res2 = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city2}&appid=d25a489495cc3f36f3029592a123031a`)
+    let res2 = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city2}&appid=d25a489495cc3f36f3029592a123031a`)
 
     let cityName = document.getElementsByClassName('weather-cart-inner1')[0].getElementsByTagName('h3')[0]
     let date = document.getElementsByClassName('weather-cart-inner1')[0].getElementsByTagName('h5')[0]
