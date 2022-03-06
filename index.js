@@ -18,11 +18,14 @@ let displaySelectValues = async() => {
     let res = await fetch('https://v6.exchangerate-api.com/v6/8a4600afb25e3e02ed974cc2/latest/USD');
     let data = await res.json();
 
+    let res2 = await fetch('https://v6.exchangerate-api.com/v6/8a4600afb25e3e02ed974cc2/latest/INR');
+    let data2 = await res2.json();
+
     for ( i = 0; i < Object.keys(data.conversion_rates).length; i++){
         countrySelector.innerHTML += `<option> ${Object.keys(data.conversion_rates)[i]} </option>`
     }
-    for ( i = 0; i < Object.keys(data.conversion_rates).length; i++){
-        amount.innerHTML += `<option> ${Object.keys(data.conversion_rates)[i]} </option>`
+    for ( i = 0; i < Object.keys(data2.conversion_rates).length; i++){
+        amount.innerHTML += `<option> ${Object.keys(data2.conversion_rates)[i]} </option>`
     } 
 }
 displaySelectValues()
